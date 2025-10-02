@@ -1,5 +1,3 @@
-
-HEAD
 ## Contenu du projet
 - **model_pipeline.py** : contient toutes les fonctions (préparation des données, entraînement, évaluation, etc.).
 - **main.py** : fichier principal qui exécute les différentes étapes via des arguments en ligne de commande.
@@ -7,13 +5,33 @@ HEAD
 - **requirements.txt** : liste des dépendances nécessaires pour exécuter le projet.
 
 ## Installation
-1. Créer et activer un environnement virtuel
+1. Créer et activer un environnement virtuel :
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  
-   python3 -m venv venv
    source venv/bin/activate
+Installer les dépendances :
+
+pip install -r requirements.txt
+
+Utilisation
+
+Exemples de commandes pour exécuter le pipeline :
+
+Entraîner le modèle :
+
+python3 main.py --action train
 
 
-# salary-prediction-pipeline
-8ffef2b4b15b660b2edf4b15108b5ed83b1a9ec2
+Évaluer le modèle :
+
+python3 main.py --action evaluate
+
+
+Faire des prédictions avec un modèle sauvegardé :
+
+python3 main.py --action predict
+
+
+Lancer une cross-validation :
+
+python3 main.py --action cv
