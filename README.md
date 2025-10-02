@@ -18,20 +18,22 @@ Utilisation
 Exemples de commandes pour exécuter le pipeline :
 
 Entraîner le modèle :
-
-python3 main.py --action train
-
+ ```bash
+  python3 main.py --action train
+ ```
 
 Évaluer le modèle :
-
+```bash
 python3 main.py --action evaluate
-
+ ```
 
 Faire des prédictions avec un modèle sauvegardé :
-
+```bash
 python3 main.py --action predict
-
+ ```
 
 Lancer une cross-validation :
-
+ 
+```bash
 python3 main.py --action cv
+```
