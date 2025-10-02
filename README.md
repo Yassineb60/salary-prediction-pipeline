@@ -10,9 +10,9 @@
    python3 -m venv venv
    source venv/bin/activate
 Installer les dépendances :
-
+ ```bash
 pip install -r requirements.txt
-
+ ```
 Utilisation
 
 Exemples de commandes pour exécuter le pipeline :
